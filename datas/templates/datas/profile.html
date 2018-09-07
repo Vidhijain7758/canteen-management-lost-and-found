@@ -1,0 +1,26 @@
+{% extends 'datas/master.html' %}
+{% load staticfiles %}
+{% block body %}
+<body style="background-image: url({% static 'datas/images/proj2.jpg'%});background-repeat: no-repeat ">
+    <div align="right">
+        <a href="{% url 'start' %}"> <p class="btn btn-primary" style="margin-right: 3%; margin-top: -2%">Logout</p></a>
+    </div>
+    <div class="container" style="margin-left: 20%;">
+        <h1><font color ="white">Profile</font></h1>
+	<p>
+        <b><i><font color ="white"> WELCOME {{ first_name }} {{last_name }}</font> </i></b></p>
+        <ol>
+            <font color ="white">
+            <li><a href="{% url 'home' %}"> <p class="btn btn-danger" style="margin-right: 3%; margin-top: 5%">CAFFETERIA</p></a></li>
+            <li>  <a href="{% url 'home1' %}"> <p class="btn btn-success" style="margin-right: 3%; margin-top: 5%">LOST AND FOUND</p></a></li>
+            <li><a href="{% url 'home2' %}"> <p class="btn btn-info" style="margin-right: 3%; margin-top: 5%">SWACHH BHARAT</p></a></li>
+            <li><a href="{% url 'home3' %}"> <p class="btn btn-warning" style="margin-right: 3%; margin-top: 5%">UPCOMING EVENTS</p></a></li>
+            </font>
+        </ol>
+    </div>
+
+
+
+
+
+{% endblock %}

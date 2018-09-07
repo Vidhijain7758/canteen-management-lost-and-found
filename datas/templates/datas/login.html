@@ -1,0 +1,58 @@
+{% extends 'datas/master.html' %}
+{% block title %}Login{% endblock %}
+{% load staticfiles %}
+
+{% block body %}
+<body style="background-image: url({% static 'datas/images/proj13.jpg'%});background-repeat: no-repeat;background-size:100% 100vh; ">
+
+<div class ="vid">
+<div class = "vid2" ><font color ="white">
+    <h1><b><i><font style = "Comic Sans MS">Login</font></i></b></h1>
+    <form class="form-vertical" method="post" enctype="multipart/form-data">
+    {% csrf_token%}
+
+    <ul>
+    {% for field in form %}
+        <span class="danger">{{ field.errors }}</span>
+        <li><label>{{ field.label_tag }}</label>
+        {{ field }}</li>
+    {% endfor %}
+    </ul>
+    <br><br>
+    <button type="submit" class="btn btn-primary" value="SignIn" style="margin-left: 32%">LOGIN</button>
+    </form>
+    <script>
+    {% if messages %}
+                {% for message in messages %}
+                    alert(message);
+                {% endfor %}
+            {% endif %}
+    </script>
+</font></div>
+</div>
+<style>
+div.vid  { width: 400px;
+  height: 500px;
+  background-color: rgba(1,0,0,0.5);
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-left: 50px;
+  -webkit-border-color: 15px;
+  -moz-border-color: 15px;
+  -ms-border-color: 15px;
+  -o-border-color: 15px;
+  border-color: 15px;
+  color:white;
+  font-weight: bolder;
+  -webkit-box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+  box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+  font-size: 18px;
+
+
+}</style>
+</body>
+{% endblock %}
+
+
+

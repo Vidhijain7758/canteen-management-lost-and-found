@@ -1,0 +1,139 @@
+{% extends 'datas/master.html' %}
+
+{% load staticfiles %}
+{% block body %}
+
+<body style="background-image: url({% static 'datas/images/proj11.jpg'%}) ; background-repeat: no-repeat;background-size:100% 100vh;">
+
+
+		        <ul class="nav navbar-nav navbar-right">
+		            <li><a href=" {% url 'profile' %}"><button type="button" class="btn btn-default">GO BACK</button></a></li>
+		        </ul>
+                <div class = vid4>
+                  <div class = vid5>
+                      <font color = "white"><p> .WELCOME TO CAFETERIA.</p>
+                          <br><br><br><br><br><br>
+                        <ul class="nav navbar-nav navbar-right">
+		            <li><a href=" {% url 'menu' %}"><button type="button" class="btn btn-danger">MENU</button></a></li>
+		        </ul>
+                          <ul class="nav navbar-nav navbar-left">
+		            <li><a href=" {% url 'order' %}"><button type="button" class="btn btn-warning">ORDER</button></a></li>
+		        </ul>
+
+                      </font>
+
+                  </div>
+                </div>
+
+
+<br><br><br>
+
+
+
+
+     <style>
+            div.vid4 { width: 400px;
+  height: 500px;
+  background-color: rgba(0,0,0,0.5);
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-left: 50px;
+  -webkit-border-color: 15px;
+  -moz-border-color: 15px;
+  -ms-border-color: 15px;
+  -o-border-color: 15px;
+  border-color: 15px;
+  color:white;
+  font-weight: bolder;
+  -webkit-box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+  box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+  font-size: 18px;
+  }
+
+	    	body {
+    			font-family: 'Montserrat';
+    			opacity: 1.2
+			}
+
+			.btn-outline-primary {
+				border-color: #FF7011;
+				color: #25303B;
+				pointer-events: none;
+			}
+
+			.btn-primary {
+				background-color: #FF7011;
+				border-color: #FF7011;
+				border-radius: 10px;
+				font-size: 1.2em;
+			}
+
+			h4 {
+			    margin:20px;
+				font-weight: bold;
+				color: #25303B;
+
+			}
+
+			h1 {
+			    margin: 20px;
+				font-family: 'Montserrat';
+			}
+
+			.main-content {
+				padding-left: 50px;
+				padding-top: 15px;
+    			padding-bottom: 50px;
+
+			}
+
+			.navbar-brand {
+				font-size: 1.75em;
+				font-color: white;
+				font-weight: bold;
+				padding-top: 25px;
+				pointer-events: none;
+			}
+
+			.navbar-inverse {
+				background-color: #25303B;
+				border-radius: 0px
+			}
+
+			.navbar-right {
+				padding-right: 20px;
+			}
+            .navbar-left {
+            padding-left:10px;
+            }
+			table  {
+			    margin : 40px;
+    			border: 4px solid black;
+
+			}
+
+			th {
+				font-size: 1.05em;
+				background-color: pink;
+				border: 1px solid #DCDCDC;
+
+			}
+
+			 td {background-color: grey;
+				padding: 5px;
+				border: 1px solid #DCDCDC;
+                font-color :white;
+			}
+
+
+
+
+	    </style>
+
+
+
+
+}
+
+{% endblock %}
